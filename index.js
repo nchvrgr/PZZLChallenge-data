@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-    
+
 const app = express();
 const router = express.Router();
 
@@ -10,7 +10,7 @@ router.get("/",  (req, res) => {
             [
                 {
                     id: "1",
-                    title: "First Block",
+                    title: "Sky",
                     images: [
                         "https://i.imgur.com/18MiNLe.jpg",
                         "https://i.imgur.com/2I9Iefs.jpg",
@@ -20,7 +20,7 @@ router.get("/",  (req, res) => {
                 },
                 {
                     id: "2",
-                    title: "Second Block",
+                    title: "Food",
                     images: [
                         "https://i.imgur.com/z8rS0RR.jpg",
                         "https://i.imgur.com/Hx9Hx9c.jpg",
@@ -30,7 +30,7 @@ router.get("/",  (req, res) => {
                 },
                 {
                     id: "3",
-                    title: "Third Block",
+                    title: "Plants",
                     images: [
                         "https://i.imgur.com/p58fg1d.jpg",
                         "https://i.imgur.com/wTwWbta.jpg",
@@ -40,7 +40,7 @@ router.get("/",  (req, res) => {
                 },
                 {
                     id: "4",
-                    title: "Fourth Block",
+                    title: "Space",
                     images: [
                         "https://i.imgur.com/amdFrUz.jpeg",
                         "https://i.imgur.com/JB3ps7L.jpg",
@@ -57,5 +57,5 @@ app.use('/api', router);
 const port = process.env.port || 3000;
 
 app.listen(port, () => {
-    console.log(`Listening at http://localhost:${port}`);
+    console.log(`Listening at http://localhost:${port}/api`);
 });
