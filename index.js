@@ -3,11 +3,11 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+const router = express.Router();
+const port = process.env.port || 3000;
 
-app.get("/", async (req, res) => {
-    try{
-        await res.json(
+router.get("/",  (req, res) => {
+     res.json(
             [
                 {
                     id: "1",
@@ -51,13 +51,10 @@ app.get("/", async (req, res) => {
                 }
             ]
         );
-    }catch(err){
-        await console.log(err)
-    }
-   
 });
 
-const port = process.env.port || 3000;
+app.use(cors());
+app.use('/', router);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
