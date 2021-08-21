@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nchvrgr/carouselData.git"
+    "url": "git+https://github.com/nchvrgr/PZZLChallenge.git"
   },
   "author": "nacho",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nchvrgr/carouselData/issues"
+    "url": "https://github.com/nchvrgr/PZZLChallenge/issues"
   },
-  "homepage": "https://github.com/nchvrgr/carouselData#readme",
+  "homepage": "https://github.com/nchvrgr/PZZLChallenge#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "docker": "^1.0.0",
