@@ -1,10 +1,9 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-
+    
 const app = express();
 const router = express.Router();
-const port = process.env.port || 3000;
 
 router.get("/",  (req, res) => {
      res.json(
@@ -55,7 +54,8 @@ router.get("/",  (req, res) => {
 
 app.use(cors());
 app.use('/api', router);
+const port = process.env.port || 3000;
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`Listening at http://localhost:${port}`);
 });
