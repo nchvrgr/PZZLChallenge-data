@@ -54,7 +54,7 @@ router.get("/",  (req, res) => {
 });
 
 app.use(cors());
-app.use('/', router);
+app.use('/api', router);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
